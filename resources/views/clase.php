@@ -1,0 +1,1 @@
+<h1>Quiero aprender a hacer vistas en PHP con Laravel</h1>
