@@ -1,59 +1,132 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Proyecto Laravel - Sistema de Vistas Conectadas
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Autor:** Luz Jimena Arce Gabriel  
+**Curso:** Desarrollo Web con PHP  
+**Fecha:** Diciembre 2025
 
-## About Laravel
+## 📋 Descripción del Proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este proyecto es una aplicación web desarrollada con Laravel que demuestra la creación y conexión de múltiples vistas mediante un sistema de rutas. El proyecto incluye 3 vistas principales que están interconectadas, permitiendo la navegación fluida entre ellas.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Características
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **3 Vistas Principales:** Cada vista tiene su propósito específico y está correctamente enrutada
+- **Sistema de Navegación:** Las vistas están conectadas entre sí mediante enlaces
+- **Rutas Configuradas:** Sistema de rutas de Laravel implementado correctamente
+- **Interfaz Responsive:** Diseño adaptable a diferentes dispositivos
 
-## Learning Laravel
+## 🛠️ Tecnologías Utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- PHP 8.x
+- Laravel 10.x
+- Blade (Motor de plantillas)
+- HTML5 & CSS3
+- Artisan CLI
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📁 Estructura del Proyecto
 
-## Laravel Sponsors
+```
+proyecto-laravel/
+│
+├── app/
+│   └── Http/
+│       └── Controllers/
+│
+├── resources/
+│   └── views/
+│       ├── alumnos/
+│       │   └── index.blade.php
+│       ├── vista2.blade.php
+│       └── vista3.blade.php
+│
+├── routes/
+│   └── web.php
+│
+└── README.md
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🔧 Instalación y Configuración
 
-### Premium Partners
+### Prerrequisitos
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- PHP >= 8.0
+- Composer
+- Laravel instalado globalmente
 
-## Contributing
+### Pasos para ejecutar el proyecto
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/Luzjimena050712/Laravel_PHP.git
+   cd Laravel_PHP
+   ```
 
-## Code of Conduct
+2. **Instalar dependencias:**
+   ```bash
+   composer install
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. **Configurar el archivo .env:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Security Vulnerabilities
+4. **Iniciar el servidor de desarrollo:**
+   ```bash
+   php artisan serve
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. **Acceder a la aplicación:**
+   Abre tu navegador y visita: `http://127.0.0.1:8000`
 
-## License
+## 🔗 Rutas Disponibles
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Ruta | Vista | Descripción |
+|------|-------|-------------|
+| `/alumnos` | index.blade.php | Vista principal del listado de alumnos |
+| `/vista2` | vista2.blade.php | Segunda vista del sistema |
+| `/vista3` | vista3.blade.php | Tercera vista del sistema |
+
+## 💡 Funcionalidad
+
+El proyecto demuestra:
+- ✅ Creación de rutas en Laravel
+- ✅ Conexión entre vistas mediante enlaces
+- ✅ Uso de Blade como motor de plantillas
+- ✅ Navegación funcional entre páginas
+- ✅ Servidor de desarrollo configurado correctamente
+- ✅ Implementación de controladores
+- ✅ Sistema de vistas organizado
+
+## 📝 Notas del Desarrollo
+
+Este proyecto fue desarrollado como parte de la segunda práctica de PHP, enfocándose en:
+- La correcta implementación del sistema de rutas de Laravel
+- La creación de vistas dinámicas con Blade
+- La interconexión efectiva entre diferentes páginas
+- El uso de comandos Artisan para el desarrollo
+- La organización del código siguiendo las mejores prácticas de Laravel
+
+## 🎯 Objetivos Cumplidos
+
+- [x] Crear cuenta de GitHub
+- [x] Realizar al menos dos commits
+- [x] Generar 3 vistas nuevas conectadas entre ellas
+- [x] Documentar el proyecto con README.md
+- [x] Incluir capturas de código y navegador
+- [x] Mostrar archivo de rutas
+- [x] Demostrar servidor funcionando
+
+## 🤝 Contribuciones
+
+Este es un proyecto académico, pero sugerencias y comentarios son bienvenidos.
+
+## 📄 Licencia
+
+Este proyecto es de uso académico.
+
+---
+
+**Repositorio:** https://github.com/Luzjimena050712/Laravel_PHP  
+**Contacto:** Luz Jimena Arce Gabriel
