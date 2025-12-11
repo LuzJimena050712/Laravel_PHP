@@ -108,16 +108,6 @@ Este proyecto fue desarrollado como parte de la segunda práctica de PHP, enfoc�
 - El uso de comandos Artisan para el desarrollo
 - La organización del código siguiendo las mejores prácticas de Laravel
 
-## 🎯 Objetivos Cumplidos
-
-- [x] Crear cuenta de GitHub
-- [x] Realizar al menos dos commits
-- [x] Generar 3 vistas nuevas conectadas entre ellas
-- [x] Documentar el proyecto con README.md
-- [x] Incluir capturas de código y navegador
-- [x] Mostrar archivo de rutas
-- [x] Demostrar servidor funcionando
-
 ## 🤝 Contribuciones
 
 Este es un proyecto académico, pero sugerencias y comentarios son bienvenidos.
